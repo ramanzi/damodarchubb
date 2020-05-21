@@ -1,0 +1,34 @@
+.layout{
+  width:100%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  .common-h-f{
+    width: 100%;
+    padding:15px;
+    background: #825df3;
+    box-sizing: border-box;
+    display:flex;
+  }
+  .app-header{
+    @extend .common-h-f;
+    h1{
+      margin:0px;
+      color:white;
+    }
+  }
+
+  .app-foter{
+    @extend .common-h-f;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+  }
+
+  .router-outlet-div{
+    margin:10px;
+  }
+}
+
+

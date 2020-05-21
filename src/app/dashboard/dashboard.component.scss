@@ -1,0 +1,103 @@
+.dashboard-form{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  margin-bottom: 80px;
+  .form-div{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    .welcome-text-div{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .titles{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding:40px;
+        align-items: center;
+        & *{
+          width: 75%;
+        }
+        .starting-title{
+          color: #3f51b5;
+          font-size: 17px;
+          margin: 0;
+        }
+        .main-title{
+          color: #3f51b5;
+          font-size: 64px;
+          margin: 15px 0px;
+          font-weight: normal;
+        }
+        .sub-title{
+          font-size: 16px;
+          margin: 0;
+        }
+      }
+
+    }
+    .submittion-form{
+      flex:1;
+      padding:40px;
+      .parent-form-div{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background: whitesmoke;
+        padding: 10px 20px 30px;
+        border-bottom: 2px solid #3f51b5;
+
+        .mat-form-field{
+          width: 100%;
+          // .mat-form-field-flex{
+          //   background-color: white !important;
+          // }
+        }
+
+        ::ng-deep {
+          .mat-form-field .mat-form-field-flex{
+            background-color: white;
+          }
+        }
+
+        .names-field{
+          display: flex;
+          flex:1;
+          div{
+            flex:1;
+            &:first-child{
+              margin-right: 4px;
+            }
+            &:last-child{
+              margin-left: 4px;
+            }
+          }
+        }
+        div{
+          // flex:1
+          margin-bottom: 5px;
+        }
+      }
+      .submit{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0px;
+        button{
+          font-size: 18px;
+          padding: 5px 25px;
+        }
+      }
+
+    }
+  }
+  .results-display{
+    display: flex;
+    flex:1;
+    color: red;
+  }
+
+}
